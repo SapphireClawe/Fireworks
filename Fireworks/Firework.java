@@ -15,6 +15,6 @@ class Firework () {
     this.diameter = random(diameter*1/50);
     this.xSpeed = random(-5, 5);
     this.ySpeed = random(-5, 5);
-    this.gravity = 0.5;
+    gravity = 0.5;
   }
 }
