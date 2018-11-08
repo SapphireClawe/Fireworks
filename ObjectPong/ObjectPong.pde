@@ -14,8 +14,8 @@ void draw() {
   StartStop.buttons();
 
   if ( StartStop.getStart() == true ) {
-    background(#E9FF03); //Yellow
-    fill(0); //Black
+    background(#90C3D4); 
+    fill(0); 
     ellipse (ballX, ballY, ballDiameter, ballDiameter);
     rect();
     rect();
