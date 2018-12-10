@@ -1,24 +1,24 @@
 class Ball {
 
- int ballX;
- int ballY;
- Boolean ballXGoal;
- Boolean ballXGoalOnce;
- Boolean createNextBall;
- final int ballStartX;
- final int ballStartY;
- final int ballDiameter;
- int ballMoveX;
- int ballMoveY;
- int directionX;
- int directionY;
- int ballSpeedX;
- int ballSpeedY;
- color c;
- int score1 = 0;
- int score2 = 0;
+  int ballX;
+  int ballY;
+  Boolean ballXGoal;
+  Boolean ballXGoalOnce;
+  Boolean createNextBall;
+  final int ballStartX;
+  final int ballStartY;
+  final int ballDiameter;
+  int ballMoveX;
+  int ballMoveY;
+  int directionX;
+  int directionY;
+  int ballSpeedX;
+  int ballSpeedY;
 
- //int ballCount=5; //Only variable that needs to be coded first
+  int score1 = 0;
+  int score2 = 0;
+
+  //int ballCount=5; //Only variable that needs to be coded first
 
   //Constructor
   Ball (float width, float height) {
@@ -39,7 +39,8 @@ class Ball {
     fill(c);
     ellipse(ballX, ballY, ballDiameter, ballDiameter);
   } 
-  
+
+
   //Game Start
   void gameStart () {
 
@@ -57,14 +58,14 @@ class Ball {
   } //End gameStart
 
   void gamePlay() {
- if (ballX < 0+(ballDiameter/4) || ballX > width-(ballDiameter/4)) { //Error: -(ballDiameter/2)
+    if (ballX < 0+(ballDiameter/4) || ballX > width-(ballDiameter/4)) { //Error: -(ballDiameter/2)
       if (ballX < 0+(ballDiameter/4)) {
         score1 = score1 + 1;
         ballX = 0+(ballDiameter/4);
         ballXGoal = true;
         ballXGoalOnce = true;
         createNextBall = true;
-        ballY = ballY; 
+        ballY = ballY;
       }
     }
     if (ballX > width-(ballDiameter/4)) {
@@ -95,13 +96,5 @@ class Ball {
       ballX += ballMoveX;
       ballY += ballMoveY;
     }
-
-
   }
-
-  
-
-  
-
- 
-} 
+}

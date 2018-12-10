@@ -1,11 +1,11 @@
-class RightPaddle  {
+class LeftPaddle {
   int paddleWidthRatio; //Variable is being re peated in setup() figuring good width of paddle, half of ballDiameter
   //Reason: do not bounce of the edge of the paddle
   int paddleHeightRatio = 10;
   int [] paddle = {0, 0}; //Paddle width and height
   int [] player = new int [4]; //Alternate way of initializing an Array, for paddles
   //0: Player1_X, 1:Player1_Y, 2:Player2_X, 3:Player2_Y
-  int [] score = {0, 0}; //Player score 1 & 2
+  int [] score = {0,0}, //Player score 1 & 2
   // End Global Variables
 
   paddleWidthRatio = ballDiameter/2;

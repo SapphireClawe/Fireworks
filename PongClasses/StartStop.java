@@ -1,7 +1,7 @@
-class StartStop {
+class StartStop  {
 
-  Boolean start = false; //Variable for Game Starting
-
+  private static Boolean start = false; //Variable for Game Starting
+  
   void buttons () {
 
     if (keyPressed) {
@@ -17,7 +17,10 @@ class StartStop {
       }
     }
   } //End of Void Buttons
-
+  
+  public static getStart() {
+    return start;
+  }
 
   void screenSizeChecker () {
 
@@ -42,4 +45,5 @@ class StartStop {
       exit(); //Used to exit the canvas, incorrectly puts the user reponsible for the coding
     }
   }
+
 }

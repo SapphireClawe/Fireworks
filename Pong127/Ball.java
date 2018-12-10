@@ -14,7 +14,7 @@ class Ball {
  int directionY;
  int ballSpeedX;
  int ballSpeedY;
- color c;
+
  int score1 = 0;
  int score2 = 0;
 
@@ -39,6 +39,7 @@ class Ball {
     fill(c);
     ellipse(ballX, ballY, ballDiameter, ballDiameter);
   } 
+
   
   //Game Start
   void gameStart () {
@@ -95,13 +96,5 @@ class Ball {
       ballX += ballMoveX;
       ballY += ballMoveY;
     }
-
-
-  }
-
-  
-
-  
-
- 
-} 
+}
+}

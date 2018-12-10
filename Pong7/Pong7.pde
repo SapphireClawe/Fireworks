@@ -1,4 +1,4 @@
- Ball[] balls = new Ball[2]; //only variable to start is how many Pong Balls will be in play
+Ball[] balls = new Ball[2]; //only variable to start is how many Pong Balls will be in play
 
  int ballCount = 0;
  int Score1=0, Score2=0;
